@@ -1,27 +1,3 @@
-﻿using UnityEngine;
-using System.Collections;
-
-public class CameraFollow : MonoBehaviour 
-{
-
-	public Transform target;
-	public float smoothing = 5f;
-
-	Vector3 offset;
-	// Use this for initialization
-	void Start () 
-	{
-
-		offset = transform.position - target.position;
-	
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () 
-	{
-		Vector3 targetCamPos = target.position + offset;
-
-		transform.position = Vector3.Lerp (transform.position, targetCamPos, smoothing * Time.deltaTime);
-	
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:93f157bd9d795bac008f20cf95e92881f0997d0cd107336cc93e72484f21c454
+size 497

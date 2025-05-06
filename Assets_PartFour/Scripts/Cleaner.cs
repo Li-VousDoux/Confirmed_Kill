@@ -1,28 +1,3 @@
-﻿using UnityEngine;
-using System.Collections;
-
-public class Cleaner : MonoBehaviour 
-{
-
-	// Use this for initialization
-	void Start () 
-	{
-	
-	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-	
-	}
-	// if player fall into box collider, destroy the player.
-	// prevents player from falling forever.
-	void OnTriggerEnter(Collider other)
-	{
-		if (other.tag == "Player") 
-		{
-			playerHealth playerDead = other.gameObject.GetComponent<playerHealth>();
-			playerDead.isDead();
-		} else Destroy (other.transform.root.gameObject);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9c10a26f54119189f5ba50651a2390549545a02ef029895da327b22dfccd6fac
+size 540

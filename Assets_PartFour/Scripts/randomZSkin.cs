@@ -1,22 +1,3 @@
-﻿using UnityEngine;
-using System.Collections;
-
-public class randomZSkin : MonoBehaviour 
-{
-	/* Randomizes the textures of zombie enemies.*/
-
-	public Material[] zombieMaterials;
-
-	// Use this for initialization
-	void Start () 
-	{
-		// Assigns a particular material to a zombie.
-		SkinnedMeshRenderer myRenderer = GetComponent<SkinnedMeshRenderer>();
-		myRenderer.material = zombieMaterials[Random.Range(0, zombieMaterials.Length)];
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:aab777910f6c65e7184724aa859e9b43b2d0bbe8c9612fc97890cd47af428a1a
+size 499
