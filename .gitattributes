@@ -974,3 +974,4 @@ Library_PartThree filter=lfs diff=lfs merge=lfs -text
 /Library_PartOne/metadata/ff/ff4e922576691e6469acc7334441551f filter=lfs diff=lfs merge=lfs -text
 /Library_PartOne/metadata/ff/ff5427b89a45a994088e2efb0326eedd filter=lfs diff=lfs merge=lfs -text
 *.md filter=lfs diff=lfs merge=lfs -text
+obj filter=lfs diff=lfs merge=lfs -text
